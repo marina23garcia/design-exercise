@@ -4,14 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        main: "#04D48E",
+        main: "#FFB518",
         dark: {
-          accent: "#529272",
-          shade: "#689C80",
+          accent: "#504538",
+          shade: "#504538",
         },
         light: {
-          accent: "#F2FDF9",
-          shade: "#00C19D",
+          accent: "#FFF8E8",
+          shade: "#FFB518",
         },
       },
     },
