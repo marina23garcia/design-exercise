@@ -539,6 +539,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: transparent;
 }
 
+.bg-light-shade{
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 63 129 / var(--tw-bg-opacity));
+}
+
 .bg-light-accent{
   --tw-bg-opacity: 1;
   background-color: rgb(255 236 238 / var(--tw-bg-opacity));
@@ -557,11 +562,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-dark-shade{
   --tw-bg-opacity: 1;
   background-color: rgb(176 47 59 / var(--tw-bg-opacity));
-}
-
-.bg-light-shade{
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 63 129 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -652,14 +652,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: -0.025em;
 }
 
-.text-main{
+.text-light-accent{
   --tw-text-opacity: 1;
-  color: rgb(251 67 84 / var(--tw-text-opacity));
+  color: rgb(255 236 238 / var(--tw-text-opacity));
 }
 
 .text-dark-shade{
   --tw-text-opacity: 1;
   color: rgb(176 47 59 / var(--tw-text-opacity));
+}
+
+.text-main{
+  --tw-text-opacity: 1;
+  color: rgb(251 67 84 / var(--tw-text-opacity));
 }
 
 .text-gray-900{
@@ -675,11 +680,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-light-accent{
-  --tw-text-opacity: 1;
-  color: rgb(255 236 238 / var(--tw-text-opacity));
 }
 
 * {
@@ -804,6 +804,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(251 67 84 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-light-accent{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 236 238 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-dark-accent{
   --tw-bg-opacity: 1;
   background-color: rgb(102 85 148 / var(--tw-bg-opacity));
@@ -814,19 +819,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(217 63 129 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-light-accent{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 236 238 / var(--tw-bg-opacity));
+.dark .dark\:text-main{
+  --tw-text-opacity: 1;
+  color: rgb(251 67 84 / var(--tw-text-opacity));
 }
 
 .dark .dark\:text-light-accent{
   --tw-text-opacity: 1;
   color: rgb(255 236 238 / var(--tw-text-opacity));
-}
-
-.dark .dark\:text-main{
-  --tw-text-opacity: 1;
-  color: rgb(251 67 84 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px){
