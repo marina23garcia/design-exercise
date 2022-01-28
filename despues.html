@@ -12,39 +12,30 @@
     <div id="app">
       <div class="relative">
         <div
-          class="absolute text-xs underline top-5 left-5 text-main dark:text-light-accent"
+          class="absolute top-5 left-5 uppercase dark:text-main dark:bg-light-accent text-light-accent bg-light-shade light rounded-sm"
         >
-          <a href="./">inicio </a>
+          <a href="./" class="p-3">inicio </a>
         </div>
       </div>
       <div :class="`${ oscuro ? 'dark' : ''}`">
         <div
-          class="justify-center w-full mx-auto bg-light-accent text-dark-accent dark:bg-dark-accent dark:text-light-accent"
+          class="justify-center w-full mx-auto bg-light-accent text-dark-shade dark:bg-dark-accent dark:text-light-accent"
         >
           <div class="block w-full p-4 text-right">
-            <button @click="oscuro = !oscuro">
+            <button @click="oscuro = !oscuro" class="text-light-accent bg-light-shade rounded-sm uppercase p-3 pt-0 pb-0">
               <span>{{oscuro ? 'día':'noche' }} </span>
             </button>
           </div>
-          <div id="TituloSeccion">{{titulo}}</div>
-          <div id="SubtituloSeccion">{{subtitulo}}</div>
-          <div class="grid px-10 py-2 bg-white md:grid-cols-5">
-            <div
-              :class="`${fondo}`"
-              v-for="fondo in fondos"
-              class="h-16"
-              :key="color"
-            >
-              {{fondo}}
-            </div>
-          </div>
+          <div id="TituloSeccion" class="text-main dark:text-light-accent">{{titulo}}</div>
+          <div id="SubtituloSeccion" class="text-main dark:text-light-accent">{{subtitulo}}</div>
+          
 
           <div id="Seccion" class="mx-auto">
             <div v-for="ficha in fichas" :key="ficha" class="FichaGeneral">
               <div class="ContenedorImagen">
                 <img :src="getUrl(ficha)" alt="" class="Imagen" />
               </div>
-              <div class="FechaEvento bg-main">20 ENE 2021</div>
+              <div class="FechaEvento bg-main dark:bg-light-shade">20 ENE 2021</div>
               <div class="TituloEvento">
                 Título del evento - Título del evento - Título del evento
               </div>
@@ -60,8 +51,8 @@
         data() {
           return {
             oscuro: false,
-            titulo: "Venta de entradas",
-            subtitulo: "Eventos",
+            titulo: "Venta de bonos",
+            subtitulo: "Bonos",
             fichas: 6,
             sizes: [200, 350, 500, 450, 150, 300],
             fondos: [
