@@ -10,7 +10,7 @@ module.exports = {
           shade: "#517388",
         },
         light: {
-          accent: "#D7C7B4",
+          accent: "#F4F7FA",
           shade: "#198CB6",
         },
       },

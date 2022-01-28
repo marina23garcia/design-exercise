@@ -507,14 +507,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: inline-block;
 }
 
-.grid{
-  display: grid;
-}
-
-.h-16{
-  height: 4rem;
-}
-
 .w-full{
   width: 100%;
 }
@@ -531,6 +523,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow: hidden;
 }
 
+.rounded-sm{
+  border-radius: 0.125rem;
+}
+
 .rounded-md{
   border-radius: 0.375rem;
 }
@@ -543,14 +539,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: transparent;
 }
 
-.bg-light-accent{
+.bg-light-shade{
   --tw-bg-opacity: 1;
-  background-color: rgb(215 199 180 / var(--tw-bg-opacity));
+  background-color: rgb(25 140 182 / var(--tw-bg-opacity));
 }
 
-.bg-white{
+.bg-light-accent{
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(244 247 250 / var(--tw-bg-opacity));
 }
 
 .bg-main{
@@ -568,23 +564,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(81 115 136 / var(--tw-bg-opacity));
 }
 
-.bg-light-shade{
+.bg-white{
   --tw-bg-opacity: 1;
-  background-color: rgb(25 140 182 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-3{
+  padding: 0.75rem;
 }
 
 .p-4{
   padding: 1rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .px-4{
@@ -607,6 +597,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.75rem;
 }
 
+.pt-0{
+  padding-top: 0px;
+}
+
+.pb-0{
+  padding-bottom: 0px;
+}
+
 .pt-16{
   padding-top: 4rem;
 }
@@ -623,11 +621,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: right;
 }
 
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -638,6 +631,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-extrabold{
   font-weight: 800;
 }
@@ -646,18 +644,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 500;
 }
 
+.uppercase{
+  text-transform: uppercase;
+}
+
 .tracking-tight{
   letter-spacing: -0.025em;
+}
+
+.text-light-accent{
+  --tw-text-opacity: 1;
+  color: rgb(244 247 250 / var(--tw-text-opacity));
+}
+
+.text-dark-shade{
+  --tw-text-opacity: 1;
+  color: rgb(81 115 136 / var(--tw-text-opacity));
 }
 
 .text-main{
   --tw-text-opacity: 1;
   color: rgb(34 95 157 / var(--tw-text-opacity));
-}
-
-.text-dark-accent{
-  --tw-text-opacity: 1;
-  color: rgb(18 44 52 / var(--tw-text-opacity));
 }
 
 .text-gray-900{
@@ -673,11 +680,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.underline{
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
 }
 
 * {
@@ -802,14 +804,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(34 95 157 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-light-accent{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 247 250 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-dark-accent{
   --tw-bg-opacity: 1;
   background-color: rgb(18 44 52 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-light-shade{
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 140 182 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:text-main{
+  --tw-text-opacity: 1;
+  color: rgb(34 95 157 / var(--tw-text-opacity));
+}
+
 .dark .dark\:text-light-accent{
   --tw-text-opacity: 1;
-  color: rgb(215 199 180 / var(--tw-text-opacity));
+  color: rgb(244 247 250 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px){
@@ -837,12 +854,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
-  }
-}
-
-@media (min-width: 768px){
-  .md\:grid-cols-5{
-    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
