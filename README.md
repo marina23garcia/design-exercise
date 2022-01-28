@@ -36,4 +36,4 @@ Crear distintas ramas con cada web. Tiempo aproximado (15min)
 Estos ejemplos se pueden utilizar para ir creando tu propio sistema de diseño
 
 [PREVIEW](https://nyambe.github.io/ejercicio-design-system/)
-[PREVIEW](https://marina23garcia/design-exercise/tree/bonos/)
+[PREVIEW](https://marina23garcia/design-exercise/)
